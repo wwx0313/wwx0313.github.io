@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福运环保 - 工业环保解决方案专家</title>
+    <style>
+        :root {
+            --primary: #2b8a3e;
+            --secondary: #0ca678;
+            --dark: #212529;
+            --light: #f8f9fa;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .slogan {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        .specs {
+            margin-top: 1rem;
+        }
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            color: var(--primary);
+            font-weight: bold;
+        }
+        .case-study {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .stat-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            min-width: 150px;
+        }
+        .stat-value {
+            font-size: 2rem;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        .contact-item {
+            margin: 0.5rem 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: var(--dark);
+            padding: 1rem 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        .nav a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        .ai-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+            .stats {
+                flex-direction: column;
+                align-items: center;
+            }
+            .stat-item {
+                margin-bottom: 1rem;
+                width: 80%;
+            }
+        }
+/* 基础图片样式 */
+img {
+  max-width: 100%;  /* 图片不会超出容器 */
+  height: auto;     /* 保持比例 */
+  border-radius: 8px; /* 圆角 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 阴影 */
+}
+
+/* 带说明的图片样式 */
+.product-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image-caption {
+  color: #666;
+  font-size: 14px;
+  margin-top: 8px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">福运环保</div>
+            <div class="slogan">守护生态福地 · 智造蓝天未来</div>
+            <p>20年专注环保设备研发，为工业企业提供全场景环保解决方案</p>
+        </div>
+    </header>
+
+    <div class="nav">
+        <a href="#about">关于我们</a>
+        <a href="#products">产品中心</a>
+        <a href="#cases">工程案例</a>
+        <a href="#contact">联系我们</a>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <h2>关于福运环保</h2>
+            <div class="card">
+                <p>江西福运环保科技有限公司成立于2002年，由江西福事特液压与江西铜业集团联合创立，坐落于江西上饶经济技术开发区，是集环保设备研发、生产、销售及工程服务于一体的现代化环保企业。</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <span>技术积淀</span>
+                        <span class="highlight">ISO9001认证</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>服务省市</span>
+                        <span class="highlight">30+</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>专利技术</span>
+                        <span class="highlight">60+项</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+<video 
+  controls 
+  width="100%" 
+  poster="preview.jpg"  <!-- 添加视频封面图 -->
+  style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+>
+  <source src="video/intro.mp4" type="video/mp4">
+</video>
+
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>核心产品</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>电铲除尘器</h3>
+                    <p>粉尘排放浓度≤10mg/m³（国标20mg/m³），噪音＜75dB，3μm以上颗粒过滤效率99%</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span>处理风量</span>
+                            <span>40000-72000m³/h</span>
+                        </div>
+                        <div class="spec-item">
+                            <span>适配设备</span>
+                            <span>PH-2300XPC/WK-55</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>VOCs催化燃烧系统</h3>
+                    <p>低温催化氧化技术，有机废气分解率＞99%，适用于化工、汽车涂装等行业</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span>催化剂寿命</span>
+                            <span>≥3年</span>
+                        </div>
+                        <div class="spec-item">
+                            <span>能耗</span>
+                            <span>比传统低30%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>自洁式滤筒过滤器</h3>
+                    <p>抗酸碱、耐潮湿，支持时序/压差/动压三种自洁模式，阻力低至250Pa</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span>过滤精度</span>
+                            <span>0.3μm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span>适用场景</span>
+                            <span>制氧厂/燃气轮机</span>
+                        </div>
+                    </div>
+                </div>
+
+ <div class="card">
+                    <h3>配套耗材与配件</h3>
+                    <p>除尘滤筒采用聚酯纤维覆膜、木浆纤维复合工艺</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span>使用寿命</span>
+                            <span>大于2-3年</span>
+                        </div>
+                        <div class="spec-item">
+                            <span>适用场景</span>
+                            <span>粉尘，废弃环境污染</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- 最简单的图片插入 -->
+<img src="machine5.jpg" 
+     alt="电铲除尘器工作现场"
+     style="width: 60%; max-width: 600px;">
+<img src="machine6.jpg" 
+     alt="电铲除尘器工作现场"
+     style="width: 60%; max-width: 600px;">
+
+<img src="images/machine 2.jpg" 
+     alt="电铲除尘器工作现场"
+     style="width: 60%; max-width: 600px;">
+<img src="machine.jpg" 
+     alt="电铲除尘器工作现场"
+     style="width: 60%; max-width: 600px;">
+
+
+    <section id="cases">
+        <div class="container">
+            <h2>成功案例</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value">3287+</div>
+                    <div>服务案例</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">12万吨</div>
+                    <div>年减排量</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">76%</div>
+                    <div>客户复购率</div>
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h3>某冶炼厂空分制氧除尘项目</h3>
+                <p>采用FKZJ自洁式过滤器，处理风量70000m³/h，过滤效率99.9%，设备运行阻力＜350Pa</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <span>粉尘浓度</span>
+                        <span class="highlight">从120mg/m³降至8mg/m³</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>滤芯寿命</span>
+                        <span class="highlight">延长至18个月</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h3>某汽车配件厂焊接烟尘治理</h3>
+                <p>部署集成式焊接烟尘除尘器，单套处理风量21600m³/h</p>
+                <div class="specs">
+                    <div class="spec-item">
+                        <span>车间浓度</span>
+                        <span class="highlight">从85mg/m³降至8mg/m³</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="card">
+                <div class="contact-item">
+                    <strong>地址：</strong>江西省上饶经济技术开发区世纪大道19号
+                </div>
+                <div class="contact-item">
+                    <strong>电话：</strong>0793-8469906
+                </div>
+                <div class="contact-item">
+                    <strong>邮箱：</strong>jiangxifuyun@163.com
+                </div>
+                <div class="contact-item">
+                    <strong>服务承诺：</strong>24小时技术响应，48小时现场服务
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 江西福运环保科技有限公司 版权所有</p>
+            <p>赣ICP备XXXXXXXX号 | 江西省环境保护协会会员单位</p>
+        </div>
+    </footer>
+
+    <div class="ai-chat" onclick="openChat()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </div>
+
+    <script>
+        // 简易AI聊天窗口
+        function openChat() {
+            const question = prompt("您好！我是福运环保智能助手\n请选择咨询类型：\n1. 产品选型\n2. 技术参数\n3. 案例详情\n请输入数字：");
+            
+            if(question === "1") {
+                alert("请提供以下信息：\n- 处理风量(m³/h)\n- 粉尘类型\n- 温度范围\n我们将为您推荐合适设备");
+            } else if(question === "2") {
+                alert("最新技术参数已发送至您的邮箱，请注意查收");
+            } else if(question === "3") {
+                alert("正在为您跳转工程案例页面...");
+                window.location.href = "#cases";
+            } else if(question) {
+                alert("您的问题已记录，客服将在24小时内联系您");
+            }
+        }
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<div style="position: fixed; right: 20px; bottom: 20px;">
+     <button onclick="openChat()" style="background: #2b8a3e; color: white; border: none; padding: 15px; border-radius: 50%; cursor: pointer;">
+       <svg width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10h8c1.1,0,2-0.9,2-2v-8C22,6.48,17.52,2,12,2z"/></svg>
+     </button>
+   </div>
+
+   <script>
+   function openChat() {
+     window.open(
+       "https://ai.sdtaa.com:3804/chat/share?shareId=2ah18uz9gemz7jfro0w05wey",
+       "_blank",
+       "width=500,height=700"
+     );
+   }
+   </script>
+</body>
+</html>
